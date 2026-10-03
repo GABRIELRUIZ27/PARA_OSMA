@@ -74,7 +74,22 @@
     .secret { max-height:0; opacity:0; overflow:hidden; transform:translateY(12px); transition:max-height .8s ease,opacity .5s ease,transform .5s ease; } .secret.show { max-height:460px; opacity:1; transform:none; }
     .secret p { margin:27px auto 0; max-width:660px; padding:25px; border-radius:22px; background:#fff8d9; color:#725226; line-height:1.75; } .reveal { margin-top:29px; }
     footer { padding:38px 20px 50px; text-align:center; color:#946c7c; font-size:.88rem; }
-    @media(max-width:720px) { .reasons,.note { grid-template-columns:1fr; } .note { text-align:center; } .flower-heart { min-height:130px; font-size:6rem; } .paw-row { gap:8px; } .paw { width:31%; font-size:.72rem; } .garden { height:88px; } .flower:nth-child(2n) { display:none; } }
+    @media(max-width:720px) {
+      .reasons,.note { grid-template-columns:1fr; }
+      .note { text-align:center; }
+      .flower-heart { min-height:130px; font-size:6rem; }
+      .paw-row { gap:8px; }
+      .paw { width:31%; font-size:.72rem; }
+      .garden { height:128px; }
+      .flowers { width:100%; padding:0 4px; }
+      .flower { width:46px; height:94px; }
+      .stem { left:21px; width:4px; height:62px; }
+      .stem:after { top:28px; left:3px; width:20px; height:10px; }
+      .sunflower,.lily { left:3px; width:40px; height:40px; }
+      .sunflower:after { inset:12px; box-shadow:0 0 0 2px #edac2a; }
+      .flower:nth-child(2n) { display:block; transform:scale(.82); }
+      .flower:nth-child(3n) { transform:scale(.68); }
+    }
     @media(prefers-reduced-motion:reduce) { *,*:before,*:after { animation-duration:.01ms!important; animation-iteration-count:1!important; scroll-behavior:auto!important; } }
   </style>
 </head>
